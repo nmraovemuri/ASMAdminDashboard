@@ -1,0 +1,125 @@
+<div class="sb-nav-fixed">
+    <app-header></app-header>
+
+    <div id="layoutSidenav">
+        <app-nav></app-nav>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h2 class="mt-30 page-title">Products</h2>
+                    <ol class="breadcrumb mb-30">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="products.html">Products</a></li>
+                        <li class="breadcrumb-item active">Add Product</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-9">
+                            <div class="card card-static-2 mb-30">
+                                <div class="card-title-2">
+                                    <h4>Add New Product</h4>
+                                </div>
+                                <div class="card-body-table">
+                                    <div class="news-content-right pd-20">
+                                        <div class="form-group">
+                                            <label class="form-label">Template Name*</label>
+                                            <input type="text" class="form-control" placeholder="Category Name">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="form-label">Type*</label>
+                                            <input type="text" class="form-control" placeholder="$0">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label class="form-label">SMS Template*</label>
+                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                        </div>       
+                                        <button class="save-btn hover-btn" type="submit">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="card card-static-2 mb-30">
+                            <div class="card-title-2">
+                                <h4>All Orders</h4>
+                            </div>
+                            <div class="card-body-table">
+                                <div class="table-responsive">
+                                    <table class="table ucp-table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:60px"><input type="checkbox" class="check-all"></th>
+                                                <th style="width:130px">Template Name</th>
+                                                <th>Type</th>
+                                                <th>SMS Template</th>                                                
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" class="check-item" name="ids[]"
+                                                        value="4"></td>
+                                                <td>one</td>                                                                                                        
+                                                <td>Registration </td>
+                                                <td> Your Registration is Complete</td>
+                                                <td class="action-btns">
+                                                    <a href="order_view.html" class="views-btn"><i
+                                                            class="fas fa-eye"></i></a>
+                                                    <a href="order_edit.html" class="edit-btn"><i
+                                                            class="fas fa-edit"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="check-item" name="ids[]"
+                                                        value="4"></td>
+                                                <td>Two</td>                                                                                                        
+                                                <td>Order </td>
+                                                <td> your order ID is completed</td>
+                                                <td class="action-btns">
+                                                    <a href="order_view.html" class="views-btn"><i
+                                                            class="fas fa-eye"></i></a>
+                                                    <a href="order_edit.html" class="edit-btn"><i
+                                                            class="fas fa-edit"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="check-item" name="ids[]"
+                                                        value="4"></td>
+                                                <td>Three</td>                                                                                                        
+                                                <td>Processing </td>
+                                                <td> your order ID is Processing</td>
+                                                <td class="action-btns">
+                                                    <a href="order_view.html" class="views-btn"><i
+                                                            class="fas fa-eye"></i></a>
+                                                    <a href="order_edit.html" class="edit-btn"><i
+                                                            class="fas fa-edit"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input type="checkbox" class="check-item" name="ids[]"
+                                                        value="4"></td>
+                                                <td>Four</td>                                                                                                        
+                                                <td>Shipped </td>
+                                                <td>your order ID is Shipped</td>
+                                                <td class="action-btns">
+                                                    <a href="order_view.html" class="views-btn"><i
+                                                            class="fas fa-eye"></i></a>
+                                                    <a href="order_edit.html" class="edit-btn"><i
+                                                            class="fas fa-edit"></i></a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

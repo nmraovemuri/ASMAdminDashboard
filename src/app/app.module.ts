@@ -48,6 +48,13 @@ import { UsersListComponent } from './users-list/users-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SubUserRegisterComponent } from './sub-user-register/sub-user-register.component';
+import { SmsConfigureComponent } from './sms-configure/sms-configure.component';
+import { SmsTemplateComponent } from './sms-template/sms-template.component';
+import { SubCategoryComponent } from './sub-category/sub-category.component';
+import { AddUnitComponent } from './add-unit/add-unit.component';
+import { AddBrandComponent } from './add-brand/add-brand.component';
+import { UnitsComponent } from './units/units.component';
+import { BrandsComponent } from './brands/brands.component';
 
 
 @NgModule({
@@ -94,6 +101,13 @@ import { SubUserRegisterComponent } from './sub-user-register/sub-user-register.
     HeaderComponent,
     FooterComponent,
     SubUserRegisterComponent,
+    SmsConfigureComponent,
+    SmsTemplateComponent,
+    SubCategoryComponent,
+    AddUnitComponent,
+    AddBrandComponent,
+    UnitsComponent,
+    BrandsComponent,
     
   ],
   imports: [

@@ -21,33 +21,7 @@
 								<a class="nav-link sub_nav_link" roterLink="posts">Tags</a> 
 							</nav>
 						</div> -->
-						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLocations"
-							aria-expanded="false" aria-controls="collapseLocations">
-							<div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
-							Locations
-							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-						</a>
-						<div class="collapse" id="collapseLocations" aria-labelledby="headingTwo"
-							data-parent="#sidenavAccordion">
-							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link sub_nav_link" routerLink="locations">All Locations</a>
-								<a class="nav-link sub_nav_link" routerLink="add-location" >Add Location</a>
-								<!-- <a class="nav-link sub_nav_link" href="add_location.html">Add Location</a> -->
-							</nav>
-						</div>
-						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAreas"
-							aria-expanded="false" aria-controls="collapseAreas">
-							<div class="sb-nav-link-icon"><i class="fas fa-map-marked-alt"></i></div>
-							Areas
-							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-						</a>
-						<div class="collapse" id="collapseAreas" aria-labelledby="headingTwo"
-							data-parent="#sidenavAccordion">
-							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link sub_nav_link" routerLink="areas">All Areas</a>
-								<a class="nav-link sub_nav_link" routerLink="add-area">Add Area</a>
-							</nav>
-						</div>
+						
 						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategories"
 							aria-expanded="false" aria-controls="collapseCategories">
 							<div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
@@ -60,8 +34,47 @@
 								<a class="nav-link sub_nav_link" routerLink="category">All Categories</a>
 								<a class="nav-link sub_nav_link" routerLink="add_category">Add Category</a>
 							</nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSubCategories"
+							aria-expanded="false" aria-controls="collapseSubCategories">
+							<div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+							Sub Categories
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseSubCategories" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="sub-categories">All SubCategories</a>
+								<a class="nav-link sub_nav_link" routerLink="sub-category">Add SubCategory</a>
+							</nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUnitCategories"
+							aria-expanded="false" aria-controls="collapseUnitCategories">
+							<div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+							Units
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseUnitCategories" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="units">All Units</a>
+								<a class="nav-link sub_nav_link" routerLink="add-unit">Add unit</a>
+							</nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBrandCategories"
+							aria-expanded="false" aria-controls="collapseBrandCategories">
+							<div class="sb-nav-link-icon"><i class="fas fa-list"></i></div>
+							Brands
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseBrandCategories" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="brands">All Brands</a>
+								<a class="nav-link sub_nav_link" routerLink="add-brand">Add Brand</a>
+							</nav>
 						</div>
-						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseShops"
+						<!-- <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseShops"
 							aria-expanded="false" aria-controls="collapseShops">
 							<div class="sb-nav-link-icon"><i class="fas fa-store"></i></div>
 							Shops
@@ -73,7 +86,7 @@
 								<a class="nav-link sub_nav_link" routerLink="shops">All Shops</a>
 								<a class="nav-link sub_nav_link" routerLink="#">Add Shop</a>
 							</nav>
-						</div>
+						</div> -->
 						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProducts"
 							aria-expanded="false" aria-controls="collapseProducts">
 							<div class="sb-nav-link-icon"><i class="fas fa-box"></i></div>
@@ -123,11 +136,51 @@
 								<a class="nav-link sub_nav_link" routerLink="payment">Payment Settings</a>
 								<a class="nav-link sub_nav_link" routerLink="email">Email Settings</a>
 							</nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSMSSettings"
+							aria-expanded="false" aria-controls="collapseSMSSettings">
+							<div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+							SMS Settings
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseSMSSettings" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="sms-configure">SMS Configuration</a>
+								<a class="nav-link sub_nav_link" routerLink="sms-template">SMS Template</a>
+								
+							</nav>
 						</div>
 						<a class="nav-link" routerLink="#">
 							<div class="sb-nav-link-icon"><i class="fas fa-chart-bar"></i></div>
 							Reports
+                        </a>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLocations"
+							aria-expanded="false" aria-controls="collapseLocations">
+							<div class="sb-nav-link-icon"><i class="fas fa-map-marker-alt"></i></div>
+							Locations
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
 						</a>
+						<div class="collapse" id="collapseLocations" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="locations">All Locations</a>
+								<a class="nav-link sub_nav_link" routerLink="add-location" >Add Location</a>								
+							</nav>
+						</div>
+						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAreas"
+							aria-expanded="false" aria-controls="collapseAreas">
+							<div class="sb-nav-link-icon"><i class="fas fa-map-marked-alt"></i></div>
+							Areas
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseAreas" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="areas">All Areas</a>
+								<a class="nav-link sub_nav_link" routerLink="add-area">Add Area</a>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</nav>

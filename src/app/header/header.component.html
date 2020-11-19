@@ -1,5 +1,5 @@
 <nav class="sb-topnav navbar navbar-expand navbar-light bg-clr">
-    <a class="navbar-brand logo-brand" href="index.html">Gambo Supermarket</a>
+    <a class="navbar-brand logo-brand" href="index.html"> Supermarket</a>
     <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
             class="fas fa-bars"></i></button>
     <a routerLink="Home" class="frnt-link"><i
@@ -12,13 +12,14 @@
           <span class="caret"></span>
           <span class="sr-only">Split button!</span>
         </button>
-        <ul id="dropdown-split" *dropdownMenu class="dropdown-menu"
-            role="menu" aria-labelledby="button-split" style="left:-85px;">
+        <ul id="dropdown-split" *dropdownMenu class="dropdown-menu sl"
+            role="menu" aria-labelledby="button-split">
+          <li role="menuitem"><a class="dropdown-item" routerLink="sub-user-register">Create Admin User</a>
           <li role="menuitem"><a class="dropdown-item" routerLink="edit-profile">Edit Profile</a></li>
           <li role="menuitem"><a class="dropdown-item" routerLink="change-password">Change Password</a> </li>			  
           <li class="divider dropdown-divider"></li>
           <li role="menuitem"><a class="dropdown-item" routerLink="logout">Logout</a>
-            <li role="menuitem"><a class="dropdown-item" routerLink="sub-user-register">Registration</a>
+           
           </li>
         </ul>
       </div>

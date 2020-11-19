@@ -1,0 +1,80 @@
+<div class="sb-nav-fixed">
+    <app-header></app-header>
+    <div id="layoutSidenav">
+        <app-nav></app-nav>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <h2 class="mt-30 page-title">Categories</h2>
+                    <ol class="breadcrumb mb-30">
+                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="category.html">Categories</a></li>
+                        <li class="breadcrumb-item active">Add Category</li>
+                    </ol>
+                    <div class="row">
+                        <div class="col-lg-9 col-md-9">
+                            <div class="card card-static-2 mb-30">
+                                <div class="card-title-2">
+                                    <h4>Add New Category</h4>
+                                </div>
+                                <form>
+                                    <!-- #regForm="ngForm" (ngSubmit)="userRegister(regForm)" novalidate>-->
+                                    <fieldset class="form-group">
+                                        <!-- [ngClass]="{ 'has-error': regForm.submitted && !user_id.valid }"-->
+                                        <label class="form-label">Name*</label>
+                                        <input type="text" class="form-control" placeholder="Category Name">
+                                        <!-- [(ngModel)]="user.user_id" name="user_id" #user_id="ngModel"
+                                            [ngClass]="{'is-invalid':regForm.submitted && user_id.invalid}" required />
+                                        <div *ngIf="user_id.invalid && (user_id.dirty || user_id.touched)" class="alert alert-danger">
+                                            <div *ngIf="user_id.errors.required">user_id is required. </div>
+                                        </div> -->
+                                    </fieldset>
+
+                                    <fieldset class="form-group">
+                                        <label class="form-label">Status*</label>
+                                        <select id="status" name="status" class="form-control">
+                                            <option selected>Active</option>
+                                            <option value="1">Inactive</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <label class="form-label">Category Image*</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile04"
+                                                    aria-describedby="inputGroupFileAddon04">
+                                                <label class="custom-file-label" for="inputGroupFile04">Choose
+                                                    Image</label>
+                                            </div>
+                                        </div>
+
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <label class="form-label">Description*</label>
+                                        <!-- <div class="card card-editor">
+                                                <div class="content-editor"> -->
+                                        <textarea class="text-control" placeholder="Enter Description"></textarea>
+                                        <!-- </div>
+                                            </div> -->
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <label class="form-label">Start Date*</label>
+                                        <input type="date" class="form-control" name="date" placeholder="Create Date"><!-- [(ngModel)]="today"-->
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <label class="form-label">End Date*</label>
+                                        <input type="date" class="form-control" name="date" 
+                                            placeholder="End Date">
+                                    </fieldset>
+                                    <button class="save-btn hover-btn" type="submit">Add New Category</button>
+                                    <!-- </div> -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <app-footer></app-footer>
+        </div>
+    </div>
+</div>

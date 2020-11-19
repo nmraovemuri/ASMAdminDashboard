@@ -31,6 +31,7 @@ import { PaymentSettingComponent } from './payment-setting/payment-setting.compo
 import { PaymentSettingStripeComponent } from './payment-setting-stripe/payment-setting-stripe.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { SubCategoriesComponent } from './sub-categories/sub-categories.component';
+import { SubCategoryComponent } from './sub-category/sub-category.component';
 import { ProductsViewComponent } from './products-view/products-view.component';
 import { ProductsComponent } from './products/products.component';
 import { ReportsComponent } from './reports/reports.component';
@@ -39,6 +40,14 @@ import { ShopViewComponent } from './shop-view/shop-view.component';
 import { ShopsComponent } from './shops/shops.component';
 import { UsersListComponent } from './users-list/users-list.component';
 import { SubUserRegisterComponent } from './sub-user-register/sub-user-register.component';
+import { SmsConfigureComponent } from './sms-configure/sms-configure.component';
+import { SmsTemplateComponent } from './sms-template/sms-template.component';
+import { AddUnitComponent } from './add-unit/add-unit.component';
+import { AddBrandComponent } from './add-brand/add-brand.component';
+import { UnitsComponent } from './units/units.component';
+import { BrandsComponent } from './brands/brands.component';
+
+
 
 const routes: Routes = [
   {
@@ -90,6 +99,10 @@ const routes: Routes = [
   {
     path : 'home/category',
     component : CategoryComponent
+  },
+  {
+    path : 'home/sub-category',
+    component : SubCategoryComponent
   },
   {
     path : 'home/change-password',
@@ -168,7 +181,7 @@ const routes: Routes = [
     component : CategoriesComponent
   },
   {
-    path : 'sub-category',
+    path : 'home/sub-categories',
     component : SubCategoriesComponent
   },  
   {
@@ -202,6 +215,30 @@ const routes: Routes = [
   {
     path : 'home/sub-user-register',
     component : SubUserRegisterComponent
+  },
+  {
+    path : 'home/sms-configure',
+    component : SmsConfigureComponent
+  },
+  {
+    path : 'home/sms-template',
+    component : SmsTemplateComponent
+  },
+  {
+    path : 'home/add-brand',
+    component : AddBrandComponent
+  },
+  {
+    path : 'home/brands',
+    component : BrandsComponent
+  },
+  {
+    path : 'home/add-unit',
+    component : AddUnitComponent
+  },
+  {
+    path : 'home/units',
+    component : UnitsComponent
   }
   
 ];
