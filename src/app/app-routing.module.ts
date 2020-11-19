@@ -6,10 +6,7 @@ import { NavComponent } from './nav/nav.component';
 import { AddAreaComponent } from './add-area/add-area.component';
 import { AddCategoryComponent } from './add-category/add-category.component';
 import { AddLocationComponent } from './add-location/add-location.component';
-import { AddMenuComponent } from './add-menu/add-menu.component';
 import { AddOfferComponent } from './add-offer/add-offer.component';
-import { AddPageComponent } from './add-page/add-page.component';
-import { AddPostComponent } from './add-post/add-post.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { AddShopComponent } from './add-shop/add-shop.component';
 import { AreasComponent } from './areas/areas.component';
@@ -34,7 +31,6 @@ import { PaymentSettingComponent } from './payment-setting/payment-setting.compo
 import { PaymentSettingStripeComponent } from './payment-setting-stripe/payment-setting-stripe.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { SubCategoriesComponent } from './sub-categories/sub-categories.component';
-import { PostsComponent } from './posts/posts.component';
 import { ProductsViewComponent } from './products-view/products-view.component';
 import { ProductsComponent } from './products/products.component';
 import { ReportsComponent } from './reports/reports.component';
@@ -42,7 +38,7 @@ import { ShopProductsComponent } from './shop-products/shop-products.component';
 import { ShopViewComponent } from './shop-view/shop-view.component';
 import { ShopsComponent } from './shops/shops.component';
 import { UsersListComponent } from './users-list/users-list.component';
-import { componentFactoryName } from '@angular/compiler';
+import { SubUserRegisterComponent } from './sub-user-register/sub-user-register.component';
 
 const routes: Routes = [
   {
@@ -73,23 +69,12 @@ const routes: Routes = [
   {
     path : 'home/add-location',
     component :  AddLocationComponent,
-  },
-  {
-    path : 'add-menu',
-    component : AddMenuComponent
-  },
+  },  
   {
     path : 'add-offer',
     component : AddOfferComponent
   },
-  {
-    path : 'add-page',
-    component :  AddPageComponent
-  },
-  {
-    path : 'home/add-post',
-    component : AddPostComponent
-  },
+ 
   {
     path : 'home/add-product',
     component : AddProductComponent
@@ -107,7 +92,7 @@ const routes: Routes = [
     component : CategoryComponent
   },
   {
-    path : 'change-password',
+    path : 'home/change-password',
     component : ChangePasswordComponent
   },
   {
@@ -123,7 +108,7 @@ const routes: Routes = [
     component : CustomersComponent
   },
   {
-    path : 'edit-profile',
+    path : 'home/edit-profile',
     component : EditProfileComponent
   },
   {
@@ -185,11 +170,7 @@ const routes: Routes = [
   {
     path : 'sub-category',
     component : SubCategoriesComponent
-  },
-  {
-    path : 'home/posts',
-    component : PostsComponent
-  },
+  },  
   {
     path : 'products-view',
     component : ProductsViewComponent
@@ -217,7 +198,12 @@ const routes: Routes = [
   {
     path : 'home/sub-users-list',
     component : UsersListComponent
+  },
+  {
+    path : 'home/sub-user-register',
+    component : SubUserRegisterComponent
   }
+  
 ];
 
 @NgModule({

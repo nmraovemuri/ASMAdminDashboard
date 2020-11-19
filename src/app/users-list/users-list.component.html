@@ -1,22 +1,5 @@
 <div class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-light bg-clr">
-        <a class="navbar-brand logo-brand" href="index.html">Gambo Supermarket</a>
-        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
-                class="fas fa-bars"></i></button>
-        <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/index.html" class="frnt-link"><i
-                class="fas fa-external-link-alt"></i>Home</a>
-        <ul class="navbar-nav ml-auto mr-md-0">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                    <a class="dropdown-item admin-dropdown-item" href="edit_profile.html">Edit Profile</a>
-                    <a class="dropdown-item admin-dropdown-item" href="change_password.html">Change Password</a>
-                    <a class="dropdown-item admin-dropdown-item" href="login.html">Logout</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <app-header></app-header>
     <div id="layoutSidenav">
         <app-nav></app-nav>
         <div id="layoutSidenav_content">
@@ -78,10 +61,10 @@
                                                     <th style="width:130px">User ID</th>
                                                     <th>Name</th>
                                                     <th>Email</th>
-                                                    <th>phone</th>                                                   
+                                                    <th>phone</th>
                                                     <th>Register Date</th>
                                                     <th style="width:300px">Address</th>
-                                                    <th>Status</th>                                                    
+                                                    <th>Status</th>
                                                     <th>Action</th>
                                                 </tr>
                                             </thead>
@@ -90,13 +73,13 @@
                                                     <td><input type="checkbox" class="check-item" name="ids[]"
                                                             value="4"></td>
                                                     <td>user 1234 </td>
-                                                    <td> maahi   </td>
-                                                    <td>Maahi@gmail.com  </td>
+                                                    <td> maahi </td>
+                                                    <td>Maahi@gmail.com </td>
                                                     <td> 1234567890</td>
                                                     <td>19/11/2020</td>
                                                     <td>#0000, St No. 8, Shahid Karnail Singh Nagar, MBD Mall, Frozpur
                                                         road, Ludhiana, 141001</td>
-                                                    <td> verified</td>                                                   
+                                                    <td> verified</td>
                                                     <td class="action-btns">
                                                         <a href="order_view.html" class="views-btn"><i
                                                                 class="fas fa-eye"></i></a>
@@ -104,7 +87,7 @@
                                                                 class="fas fa-edit"></i></a>
                                                     </td>
                                                 </tr>
-                                               
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -114,23 +97,7 @@
                     </div>
                 </div>
             </main>
-            <footer class="py-4 bg-footer mt-auto">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted-1">© 2020 <b>Gambo Supermarket</b>. by <a
-                                href="https://themeforest.net/user/gambolthemes">Gambolthemes</a></div>
-                        <div class="footer-links">
-                            <a href="http://gambolthemes.net/html-items/gambo_supermarket_demo/privacy_policy.html">Privacy
-                                Policy</a>
-                            <a
-                                href="http://gambolthemes.net/html-items/gambo_supermarket_demo/term_and_conditions.html">Terms
-                                &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <app-footer></app-footer>>
         </div>
     </div>
-
-
 </div>

@@ -1,28 +1,5 @@
 <div class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-light bg-clr">
-        <a class="navbar-brand logo-brand" href="index.html">Gambo Supermarket</a>
-        <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
-                class="fas fa-bars"></i></button>
-        <a href="#" class="frnt-link"><i class="fas fa-external-link-alt"></i>Home</a>
-        <ul class="navbar-nav ml-auto mr-md-0">
-            <div class="btn-group" dropdown>
-                <button type="button" class="btn btn-danger">Action</button>
-                <button id="button-split" type="button" dropdownToggle
-                    class="btn btn-danger dropdown-toggle dropdown-toggle-split" aria-controls="dropdown-split">
-                    <span class="caret"></span>
-                    <span class="sr-only">Split button!</span>
-                </button>
-                <ul id="dropdown-split" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-split"
-                    style="left:-85px;">
-                    <li role="menuitem"><a class="dropdown-item" routerLink="edit-profile">Edit Profile</a></li>
-                    <li role="menuitem"><a class="dropdown-item" routerLink="edit-profile">Change Password</a> </li>
-                    <li class="divider dropdown-divider"></li>
-                    <li role="menuitem"><a class="dropdown-item" routerLink="logout">Logout</a>
-                    </li>
-                </ul>
-            </div>
-        </ul>
-    </nav>
+    <app-header></app-header>
     <div id="layoutSidenav">
         <app-nav></app-nav>
         <div id="layoutSidenav_content">
@@ -97,19 +74,7 @@
                     </div>
                 </div>
             </main>
-            <footer class="py-4 bg-footer mt-auto">
-                <div class="container-fluid">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted-1">© 2020 <b> Supermarket</b>.</div>
-                        <div class="footer-links">
-                            <a href="#">Privacy
-                                Policy</a>
-                            <a href="#">Terms
-                                &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <app-footer></app-footer>
         </div>
     </div>
 </div>
