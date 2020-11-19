@@ -41,6 +41,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { ShopProductsComponent } from './shop-products/shop-products.component';
 import { ShopViewComponent } from './shop-view/shop-view.component';
 import { ShopsComponent } from './shops/shops.component';
+import { UsersListComponent } from './users-list/users-list.component';
+import { componentFactoryName } from '@angular/compiler';
 
 const routes: Routes = [
   {
@@ -65,7 +67,7 @@ const routes: Routes = [
     component : AddAreaComponent
   },
   {
-    path : 'add_category',
+    path : 'home/add_category',
     component  :AddCategoryComponent
   },
   {
@@ -101,7 +103,7 @@ const routes: Routes = [
     component : AreasComponent
   },
   {
-    path : 'category',
+    path : 'home/category',
     component : CategoryComponent
   },
   {
@@ -211,6 +213,10 @@ const routes: Routes = [
   {
     path : 'shops',
     component : ShopsComponent
+  },
+  {
+    path : 'home/sub-users-list',
+    component : UsersListComponent
   }
 ];
 

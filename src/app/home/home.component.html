@@ -95,8 +95,8 @@
 						<div class="collapse" id="collapseCategories" aria-labelledby="headingTwo"
 							data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link sub_nav_link" routerLink="#">All Categories</a>
-								<a class="nav-link sub_nav_link" routerLink="#">Add Category</a>
+								<a class="nav-link sub_nav_link" routerLink="category">All Categories</a>
+								<a class="nav-link sub_nav_link" routerLink="add_category">Add Category</a>
 							</nav>
 						</div>
 						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseShops"
@@ -123,6 +123,19 @@
 							<nav class="sb-sidenav-menu-nested nav">
 								<a class="nav-link sub_nav_link" routerLink="products">All Products</a>
 								<a class="nav-link sub_nav_link" routerLink="add-product">Add Product</a>
+							</nav>
+						</div>
+						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomers"
+							aria-expanded="false" aria-controls="collapseCustomers">
+							<div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+							Customers
+							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+						</a>
+						<div class="collapse" id="collapseCustomers" aria-labelledby="headingTwo"
+							data-parent="#sidenavAccordion">
+							<nav class="sb-sidenav-menu-nested nav">
+								<a class="nav-link sub_nav_link" routerLink="customers">All Customers</a>
+								<a class="nav-link sub_nav_link" routerLink="sub-users-list">All Sub Users</a>
 							</nav>
 						</div>
 						<a class="nav-link" routerLink="orders">

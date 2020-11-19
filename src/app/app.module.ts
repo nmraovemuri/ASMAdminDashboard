@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule} from "@angular/common/http"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,6 +48,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { ShopProductsComponent } from './shop-products/shop-products.component';
 import { ShopViewComponent } from './shop-view/shop-view.component';
 import { ShopsComponent } from './shops/shops.component';
+import { UsersListComponent } from './users-list/users-list.component';
 
 @NgModule({
   declarations: [
@@ -90,11 +93,14 @@ import { ShopsComponent } from './shops/shops.component';
     ReportsComponent,
     ShopProductsComponent,
     ShopViewComponent,
-    ShopsComponent
+    ShopsComponent,
+    UsersListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot()
   ],
