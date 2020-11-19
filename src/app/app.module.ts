@@ -55,6 +55,8 @@ import { AddUnitComponent } from './add-unit/add-unit.component';
 import { AddBrandComponent } from './add-brand/add-brand.component';
 import { UnitsComponent } from './units/units.component';
 import { BrandsComponent } from './brands/brands.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ForgotConfirmPasswordComponent } from './forgot-confirm-password/forgot-confirm-password.component';
 
 
 @NgModule({
@@ -108,6 +110,8 @@ import { BrandsComponent } from './brands/brands.component';
     AddBrandComponent,
     UnitsComponent,
     BrandsComponent,
+    ForgotPasswordComponent,
+    ForgotConfirmPasswordComponent,
     
   ],
   imports: [
