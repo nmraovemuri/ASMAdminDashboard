@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminService} from './../admin.service';
 
 @Component({
   selector: 'app-units',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnitsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private adServ : AdminService) { }
+  allUnits :any;
   ngOnInit(): void {
+    this.getUnits();
   }
 
+  getUnits(){
+    this.adServ.getAllUnits().subscribe((result:any)=>{
+      console.log("GetAll Units:",result.data);
+      this.allUnits = result.data;
+    })
+  }
 }

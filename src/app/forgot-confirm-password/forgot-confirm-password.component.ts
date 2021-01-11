@@ -10,6 +10,7 @@ export class ForgotConfirmPasswordComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+    console.log("localstorage,",localStorage.getItem('email'))
+;  }
 
 }

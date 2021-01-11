@@ -66,66 +66,19 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                <tr *ngFor = "let u of allUnits">
                                                     <td><input type="checkbox" class="check-item" name="ids[]"
                                                             value="11"></td>
-                                                    <td>1</td>
-                                                    <td>Kilograms </td>
-                                                    <td>KG</td>
-                                                    <td><span class="badge-item badge-status">Active</span></td>
+                                                    <td>{{u.id}}</td>
+                                                    <td>{{u.unit_value}} </td>
+                                                    <td>{{u.unit_type}}</td>
+                                                    <td><span class="badge-item badge-status">{{u.status}}</span></td>
                                                     <td class="action-btns">
                                                         <a href="#" class="edit-btn"><i class="fas fa-edit"></i>
                                                             Edit</a>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" class="check-item" name="ids[]"
-                                                            value="11"></td>
-                                                    <td>2</td>
-                                                    <td>Liters </td>
-                                                    <td>L</td>
-                                                    <td><span class="badge-item badge-status">Active</span></td>
-                                                    <td class="action-btns">
-                                                        <a href="#" class="edit-btn"><i class="fas fa-edit"></i>
-                                                            Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" class="check-item" name="ids[]"
-                                                            value="11"></td>
-                                                    <td>3</td>
-                                                    <td>Pcs </td>
-                                                    <td>pcs</td>
-                                                    <td><span class="badge-item badge-status">Active</span></td>
-                                                    <td class="action-btns">
-                                                        <a href="#" class="edit-btn"><i class="fas fa-edit"></i>
-                                                            Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" class="check-item" name="ids[]"
-                                                            value="11"></td>
-                                                    <td>4</td>
-                                                    <td>Grams </td>
-                                                    <td>gms</td>
-                                                    <td><span class="badge-item badge-status">Active</span></td>
-                                                    <td class="action-btns">
-                                                        <a href="#" class="edit-btn"><i class="fas fa-edit"></i>
-                                                            Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td><input type="checkbox" class="check-item" name="ids[]"
-                                                            value="11"></td>
-                                                    <td>5</td>
-                                                    <td>Millilitre </td>
-                                                    <td>ml</td>
-                                                    <td><span class="badge-item badge-status">Active</span></td>
-                                                    <td class="action-btns">
-                                                        <a href="#" class="edit-btn"><i class="fas fa-edit"></i>
-                                                            Edit</a>
-                                                    </td>
-                                                </tr>
+                                               
                                                 
                                             </tbody>
                                         </table>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from "@angular/common/http"
 
 import { AppRoutingModule } from './app-routing.module';
@@ -57,6 +58,8 @@ import { UnitsComponent } from './units/units.component';
 import { BrandsComponent } from './brands/brands.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ForgotConfirmPasswordComponent } from './forgot-confirm-password/forgot-confirm-password.component';
+import { AdminService} from './admin.service';
+
 
 
 @NgModule({
@@ -113,16 +116,18 @@ import { ForgotConfirmPasswordComponent } from './forgot-confirm-password/forgot
     ForgotPasswordComponent,
     ForgotConfirmPasswordComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     BsDropdownModule.forRoot()
   ],
-  providers: [],
+  providers: [AdminService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

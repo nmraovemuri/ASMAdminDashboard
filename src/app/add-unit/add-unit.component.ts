@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminService} from './../admin.service';
 
 @Component({
   selector: 'app-add-unit',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddUnitComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private adServ : AdminService) { }
+  units : any={};
   ngOnInit(): void {
+    
   }
 
+  createUnit(units:any){
+    this.adServ.createUnits(units.value).subscribe((data)=>{
+      console.log("create Units data:",data);
+      })
+
+  }
 }

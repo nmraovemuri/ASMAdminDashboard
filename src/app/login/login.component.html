@@ -10,14 +10,26 @@
                                 <h3 class="text-center font-weight-light my-4">Login</h3>
                             </div>
                             <div class="card-body">
-                                <form>
+                                <form #adminLoginForm="ngForm" (ngSubmit)=adminLogin(adminLoginForm) novalidate>
                                     <div class="form-group">
                                         <label class="form-label" for="inputEmailAddress">Email*</label>
-                                        <input class="form-control py-3" id="inputEmailAddress" type="email" placeholder="Enter email address">
+                                        <input class="form-control py-3" id="inputEmailAddress" type="email" placeholder="Enter email address"
+                                        [(ngModel)]="loginData.email" name="emailID" #emailID="ngModel"
+                                        [ngClass]="{'is-invalid':adminLoginForm.submitted && emailID.invalid}" required />
+                                        <div *ngIf="emailID.invalid && (emailID.dirty || emailID.touched)"
+                                            class="alert alert-danger">
+                                            <!-- <div *ngIf="email.errors.required">Email is required. </div> -->
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label" for="inputPassword">Password*</label>
-                                        <input class="form-control py-3" id="inputPassword" type="password" placeholder="Enter password">
+                                        <input class="form-control py-3" id="inputPassword" type="password" placeholder="Enter password"
+                                        [(ngModel)]="loginData.password" name="password" #password="ngModel"
+                                        [ngClass]="{'is-invalid':adminLoginForm.submitted && password.invalid}" required />
+                                        <div *ngIf="password.invalid && (password.dirty || password.touched)"
+                                            class="alert alert-danger">
+                                            <!-- <div *ngIf="password.errors.required">Password is required. </div> -->
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control ">
@@ -25,9 +37,13 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
-                                        <a class="btn btn-sign hover-btn" href="index.html">Login</a>
-                                    </div>
+                                    <fieldset class="form-group">
+                                        <button type="submit" class="btn btn-lg btn btn-sign hover-btn d-flex align-items-center justify-content-between mt-4 mb-0"
+                                            [disabled]="!adminLoginForm.valid">Enter to your account</button>
+                                    </fieldset>
+                                    <!-- <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">btn btn-sign hover-btn
+                                        <a class="btn btn-sign hover-btn"  [disabled]="!adminLoginForm.valid">Login</a><!-- [disabled]="!adminLoginForm.valid"
+                                    </div> -->
                                 </form>
                             </div>
                         </div>

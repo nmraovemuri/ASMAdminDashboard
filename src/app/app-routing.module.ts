@@ -243,13 +243,9 @@ const routes: Routes = [
     component : UnitsComponent
   },
   {
-    path : 'home/forgot-password',
-    component : ForgotPasswordComponent
-  },
-  {
     path : 'forgot-password',
     component : ForgotPasswordComponent
-  },
+  }, 
   {
     path : 'forgot-confirm-password',
     component : ForgotConfirmPasswordComponent
