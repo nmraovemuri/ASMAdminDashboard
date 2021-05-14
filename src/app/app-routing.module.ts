@@ -48,6 +48,7 @@ import { UnitsComponent } from './units/units.component';
 import { BrandsComponent } from './brands/brands.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ForgotConfirmPasswordComponent } from './forgot-confirm-password/forgot-confirm-password.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 
 
@@ -70,15 +71,15 @@ const routes: Routes = [
     component : NavComponent
   },
   {
-    path : 'home/add-area',
+    path : 'add-area',
     component : AddAreaComponent
   },
   {
-    path : 'home/add_category',
+    path : 'add_category',
     component  :AddCategoryComponent
   },
   {
-    path : 'home/add-location',
+    path : 'add-location',
     component :  AddLocationComponent,
   },  
   {
@@ -87,7 +88,7 @@ const routes: Routes = [
   },
  
   {
-    path : 'home/add-product',
+    path : 'add-product',
     component : AddProductComponent
   },
   {
@@ -95,19 +96,19 @@ const routes: Routes = [
     component : AddShopComponent
   },
   {
-    path : 'home/areas',
+    path : 'areas',
     component : AreasComponent
   },
   {
-    path : 'home/category',
+    path : 'category',
     component : CategoryComponent
   },
   {
-    path : 'home/sub-category',
+    path : 'add-sub-category',
     component : SubCategoryComponent
   },
   {
-    path : 'home/change-password',
+    path : 'change-password',
     component : ChangePasswordComponent
   },
   {
@@ -119,27 +120,27 @@ const routes: Routes = [
     component : CustomerViewComponent
   },
   {
-    path : 'home/customers',
+    path : 'customers',
     component : CustomersComponent
   },
   {
-    path : 'home/edit-profile',
+    path : 'edit-profile',
     component : EditProfileComponent
   },
   {
-    path : 'home/email',
+    path : 'email',
     component : EmailSettingComponent
   },
   {
-    path : 'home/general/analytics',
+    path : 'general/analytics',
     component : GeneralSettingAnalyticsComponent
   },
   {
-    path : 'home/general',
+    path : 'general',
     component : GeneralSettingComponent
   },
   {
-    path : 'home/general/contact',
+    path : 'general/contact',
     component : GeneralSettingContactComponent
   },
   {
@@ -151,11 +152,11 @@ const routes: Routes = [
     component : GeneralSettingLogoComponent
   },
   {
-    path : 'home/locations',
+    path : 'locations',
     component : LocationsComponent
   },
   {
-    path : 'home/offers',
+    path : 'offers',
     component : OffersComponent
   },
   {
@@ -167,15 +168,15 @@ const routes: Routes = [
     component : OrderViewComponent
   },
   {
-    path : 'home/orders',
+    path : 'orders',
     component : OrdersComponent
   },
   {
-    path : 'home/payment',
+    path : 'payment',
     component : PaymentSettingComponent
   },
   {
-    path : 'home/payment/payment-strip',
+    path : 'payment/payment-strip',
     component : PaymentSettingStripeComponent
   },
   {
@@ -183,7 +184,7 @@ const routes: Routes = [
     component : CategoriesComponent
   },
   {
-    path : 'home/sub-categories',
+    path : 'sub-categories',
     component : SubCategoriesComponent
   },  
   {
@@ -191,7 +192,7 @@ const routes: Routes = [
     component : ProductsViewComponent
   },
   {
-    path : 'home/products',
+    path : 'products',
     component : ProductsComponent
   },
   {
@@ -211,35 +212,35 @@ const routes: Routes = [
     component : ShopsComponent
   },
   {
-    path : 'home/sub-users-list',
+    path : 'sub-users-list',
     component : UsersListComponent
   },
   {
-    path : 'home/sub-user-register',
+    path : 'sub-user-register',
     component : SubUserRegisterComponent
   },
   {
-    path : 'home/sms-configure',
+    path : 'sms-configure',
     component : SmsConfigureComponent
   },
   {
-    path : 'home/sms-template',
+    path : 'sms-template',
     component : SmsTemplateComponent
   },
   {
-    path : 'home/add-brand',
+    path : 'add-brand',
     component : AddBrandComponent
   },
   {
-    path : 'home/brands',
+    path : 'brands',
     component : BrandsComponent
   },
   {
-    path : 'home/add-unit',
+    path : 'add-unit',
     component : AddUnitComponent
   },
   {
-    path : 'home/units',
+    path : 'units',
     component : UnitsComponent
   },
   {
@@ -249,8 +250,12 @@ const routes: Routes = [
   {
     path : 'forgot-confirm-password',
     component : ForgotConfirmPasswordComponent
-
-  }
+  },
+  {
+    path :'order-details/:order_id/:total_amount',
+    // single/:pid/:unit_value
+    component :OrderDetailsComponent
+  },
   
   
 ];

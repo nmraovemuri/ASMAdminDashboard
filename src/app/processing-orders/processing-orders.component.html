@@ -1,0 +1,54 @@
+<div class="col-lg-12 col-md-12">
+    <div class="card card-static-2 mb-30">        
+        <div class="card-body-table">
+            <div class="table-responsive">
+                <table class="table ucp-table table-hover">
+                    <thead>
+                        <tr>
+                            <!-- <th style="width:60px"><input type="checkbox" class="check-all">
+                            </th> -->
+                            <th style="width:130px">Order ID</th>
+                            <th style="width:200px">Customer Name</th>
+                            <th style="width:200px">Mobile </th>
+                            <th style="width:200px">Date</th>
+                            <th style="width:200px">Total Items</th>
+                            <th style="width:200px">Total Amount</th>
+                            <!-- <th style="width:130px">Status</th> -->
+                            <th class="text-center" style="width: 200px;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor = "let order of ordersList">
+                            <!-- <td><input type="checkbox" class="check-item" name="ids[]"
+                                    value="4"></td> -->
+                            <td (click)="showOrderDetails(order.order_id, order.total_amount)">{{order.order_id}}</td>
+                            <td>
+                                <a href="#" target="_blank" style="text-transform: capitalize;">{{order.first_name}}</a>
+                            </td>
+                            <td>{{order.mobile}}</td>
+                            <td>{{order.created_date}}
+                                <!-- <span class="delivery-time">15/06/2020</span>
+                                <span class="delivery-time">4:00PM - 6.00PM</span> -->
+                            </td>
+                            <td style="width:5%">{{order.total_items}}</td>
+                            <td style="width:5%">{{order.total_amount}}</td>
+                            <!-- <td>
+                                <span class="badge-item badge-status" (click)="statusUpdate(order.order_id,'closed')">Close</span>
+                            </td> -->
+                            
+                            <td class="action-btns">
+                                <button type="button" class="btn btn-outline-secondary" style ="margin-right: 12px;" (click)="showOrderDetails(order.order_id, order.total_amount)">View Details</button>
+                                <!-- <a (click)="showOrderDetails(order.order_id)" class="views-btn"><i
+                                        class="fas fa-eye"></i></a> -->
+                                <!-- <a href="order_edit.html" class="edit-btn"><i
+                                        class="fas fa-edit"></i></a> -->
+                             <button type="button" class="btn btn-outline-success" style ="margin-right: 12px;" (click)="statusUpdate(order.order_id,'closed')">Close</button>
+                             <!-- <span class="badge-item badge-status" (click)="statusUpdate(order.order_id,'closed')">Close</span> -->
+                            </td>
+                        </tr>                                            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

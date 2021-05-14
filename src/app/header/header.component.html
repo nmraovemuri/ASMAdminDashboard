@@ -1,23 +1,21 @@
 <nav class="sb-topnav navbar navbar-expand navbar-light bg-clr">
-    <a class="navbar-brand logo-brand" href="index.html"> Supermarket</a>
-    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
-            class="fas fa-bars"></i></button>
-    <a routerLink="Home" class="frnt-link"><i
-            class="fas fa-external-link-alt"></i>Home</a>  
-    <ul class="navbar-nav ml-auto mr-md-0">
-    <div class="btn-group" dropdown>
+    <a class="navbar-brand logo-brand" routerLink="/home"> Admin Dashboard</a>
+    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" style="cursor: pointer;"></button><!--<i class="fas fa-bars"></i>-->
+    <a routerLink="/home" class="frnt-link" style="padding-left: 18px;"><i class ="fas fa-store"></i>Home</a>  
+    <ul class="navbar-nav col-md-6 offset-8">    <!--ml-auto mr-md-0-->
+    <div class="btn-group" dropdown >
         <button type="button" class="btn btn-danger">Action</button>
         <button id="button-split" type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split"
                 aria-controls="dropdown-split" >
           <span class="caret"></span>
           <span class="sr-only">Split button!</span>
         </button>
-        <ul id="dropdown-split" *dropdownMenu class="dropdown-menu sl"
+        <ul id="dropdown-split" *dropdownMenu class="dropdown-menu"
             role="menu" aria-labelledby="button-split">
-          <li role="menuitem"><a class="dropdown-item" routerLink="sub-user-register">Create Admin User</a>
-          <li role="menuitem"><a class="dropdown-item" routerLink="edit-profile">Edit Profile</a></li>
-          <li role="menuitem"><a class="dropdown-item" routerLink="change-password">Change Password</a> </li>	
-          <!-- <li role="menuitem"><a class="dropdown-item" routerLink="forgot-password">Forgot Password</a> </li>		   -->
+          <li role="menuitem"><a class="dropdown-item" routerLink="/sub-user-register">Create Admin User</a>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/edit-profile">Edit Profile</a></li>
+          <li role="menuitem"><a class="dropdown-item" routerLink="/change-password">Change Password</a> </li>	
+          
           <li class="divider dropdown-divider"></li>
           <li role="menuitem"><a class="dropdown-item" routerLink="logout" (click)="logout()">Logout</a>
            

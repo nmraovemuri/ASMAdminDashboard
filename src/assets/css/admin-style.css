@@ -355,9 +355,11 @@ input[type=checkbox], input[type=radio] {
 }
 
 .ucp-table thead tr th {
-    color: #2b2f4c;
-    font-size: 14px;
-    background-color: #ffecec;
+    color: #fff;
+    font-size: 17px;
+    /* background-color: #ffecec; */
+    /* background-color: linear-gradient(to bottom, #A8DE1C 0%, #50AC02 100%) !important; */
+    background-color: #2b2f4c;
 	font-weight: 500;
 }
 

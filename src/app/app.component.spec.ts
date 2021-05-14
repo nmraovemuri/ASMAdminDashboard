@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'frontenddashboard'`, () => {
+  it(`should have as title 'asmadmindashboard'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('frontenddashboard');
+    expect(app.title).toEqual('asmadmindashboard');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('frontenddashboard app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('asmadmindashboard app is running!');
   });
 });

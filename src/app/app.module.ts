@@ -59,6 +59,12 @@ import { BrandsComponent } from './brands/brands.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ForgotConfirmPasswordComponent } from './forgot-confirm-password/forgot-confirm-password.component';
 import { AdminService} from './admin.service';
+import { NewOrdersComponent } from './new-orders/new-orders.component';
+import { ProcessingOrdersComponent } from './processing-orders/processing-orders.component';
+import { ClosedOrdersComponent } from './closed-orders/closed-orders.component';
+import { CanceledOrdersComponent } from './canceled-orders/canceled-orders.component';
+import { ShippingOrdersComponent } from './shipping-orders/shipping-orders.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 
 
@@ -115,6 +121,8 @@ import { AdminService} from './admin.service';
     BrandsComponent,
     ForgotPasswordComponent,
     ForgotConfirmPasswordComponent,
+    NewOrdersComponent,    
+    ProcessingOrdersComponent, ClosedOrdersComponent, CanceledOrdersComponent, ShippingOrdersComponent, OrderDetailsComponent,
     
     
   ],

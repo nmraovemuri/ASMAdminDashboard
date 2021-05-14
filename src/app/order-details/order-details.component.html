@@ -1,0 +1,162 @@
+
+<div class="sb-nav-fixed">
+    <app-header></app-header>
+    <div id="layoutSidenav">
+        <app-nav></app-nav>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid">
+                    <ol class="breadcrumb mb-10">
+                        <li class="breadcrumb-item"><a routerLink = "/home">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Orders</li>
+                    </ol>                                      
+                    <div class="col-lg-12 col-md-12">
+                        <div class="card card-static-2 mb-30">
+                            <div class="card-body-table">
+                                <div class ="row mt-120">
+                                    <div class="col-md-6">
+                                        <p class="mt-10">Billing Address:</p><hr>
+                                        <div class="table-responsive">
+                                            <table style="width: 75%;">
+                                                <tr>
+                                                    <td>customer_id:</td>
+                                                    <td>{{billingAddress.customer_id}}</td>
+                                                    <td>Name:</td>
+                                                    <td>{{billingAddress.first_name}}</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td>email_id:</td>
+                                                    <td>{{billingAddress.email_id}}</td>
+                                                    <td>mobile :</td>
+                                                    <td>{{billingAddress.mobile}}</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td>created_date:</td>
+                                                    <td>{{billingAddress.created_date}}</td>
+                                                    <td>updated_date:</td>
+                                                    <td>{{billingAddress.updated_date}}</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>addr_field1:</td>
+                                                    <td>{{billingAddress.addr_field1}}</td>
+                                                    <td>addr_field2:</td>
+                                                    <td>{{billingAddress.addr_field2}}</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>addr_field3:</td>
+                                                    <td>{{billingAddress.addr_field3}}</td>
+                                                    <td>addr_field4:</td>
+                                                    <td>{{billingAddress.addr_field4}}</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>addr_field5:</td>
+                                                    <td>{{billingAddress.addr_field5}}</td>
+                                                    <td>pincode:</td>
+                                                    <td>{{billingAddress.pin_code}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Order ID:</td>
+                                                    <td>{{order_id}}</td>
+                                                   
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="mt-10">Shipping Address:</p><hr>
+                                        <div class="table-responsive">
+                                            <table style="width: 75%;">
+                                                <tr>
+                                                    <td>customer_id:</td>
+                                                    <td>{{shippingAddress.customer_id}}</td>
+                                                    <td>Name:</td>
+                                                    <td>{{shippingAddress.first_name}}</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td>email_id:</td>
+                                                    <td>{{shippingAddress.email_id}}</td>
+                                                    <td>mobile :</td>
+                                                    <td>{{shippingAddress.mobile}}</td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td>created_date:</td>
+                                                    <td>{{shippingAddress.created_date}}</td>
+                                                    <td>updated_date:</td>
+                                                    <td>{{shippingAddress.updated_date}}</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>addr_field1:</td>
+                                                    <td>{{shippingAddress.addr_field1}}</td>
+                                                    <td>addr_field2:</td>
+                                                    <td>{{shippingAddress.addr_field2}}</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>addr_field3:</td>
+                                                    <td>{{shippingAddress.addr_field3}}</td>
+                                                    <td>addr_field4:</td>
+                                                    <td>{{shippingAddress.addr_field4}}</td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>addr_field5:</td>
+                                                    <td>{{shippingAddress.addr_field5}}</td>
+                                                    <td>addr_field6:</td>
+                                                    <td>{{shippingAddress.addr_field6}}</td>
+                                                </tr>
+                                                
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table ucp-table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th style="width:150px;">S.No</th>
+                                                <th style="width:430px">Product Name</th>                            
+                                                <th style="width:200px">Unit/Type </th>                            
+                                                <th style="width:150px">MRP</th>
+                                                <th class="widht:150px">GST</th>
+                                                <th style="width:150px">Qty</th>                            
+                                                <th style="width:200px">Sale_price</th>
+                                                <th style="width:300px">Total Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody >
+                                            <tr *ngFor = "let product of orderDetailsList,let sno = index">
+                                                <td>{{sno+1}}</td>
+                                                <!-- <td>{{product.order_id}}</td> -->
+                                                <td>{{product.product_name}}</td>
+                                                <td>{{product.unit_value}}{{product.unit_type}}</td>
+                                                <td>{{product.mrp}}</td>
+                                                <td> {{product.gst_slab}}</td>
+                                                <td>{{product.quantity}}</td>                                                                                     
+                                                <td>{{product.sale_price}} </td>                            
+                                                <td>{{product.total_amount}}</td>
+                                            </tr>                                            
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                
+                                                 <td style="width: 150px;float: left;">Total : {{total_amount}}</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+           <app-footer></app-footer>
+        </div>
+    </div>
+</div>
