@@ -65,6 +65,7 @@ import { ClosedOrdersComponent } from './closed-orders/closed-orders.component';
 import { CanceledOrdersComponent } from './canceled-orders/canceled-orders.component';
 import { ShippingOrdersComponent } from './shipping-orders/shipping-orders.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { ProductUnitPriceComponent } from './product-unit-price/product-unit-price.component';
 
 
 
@@ -122,7 +123,7 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
     ForgotPasswordComponent,
     ForgotConfirmPasswordComponent,
     NewOrdersComponent,    
-    ProcessingOrdersComponent, ClosedOrdersComponent, CanceledOrdersComponent, ShippingOrdersComponent, OrderDetailsComponent,
+    ProcessingOrdersComponent, ClosedOrdersComponent, CanceledOrdersComponent, ShippingOrdersComponent, OrderDetailsComponent, ProductUnitPriceComponent,
     
     
   ],

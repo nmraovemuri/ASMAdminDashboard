@@ -49,6 +49,7 @@ import { BrandsComponent } from './brands/brands.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ForgotConfirmPasswordComponent } from './forgot-confirm-password/forgot-confirm-password.component';
 import { OrderDetailsComponent } from './order-details/order-details.component';
+import { ProductUnitPriceComponent } from './product-unit-price/product-unit-price.component';
 
 
 
@@ -90,6 +91,10 @@ const routes: Routes = [
   {
     path : 'add-product',
     component : AddProductComponent
+  },
+  {
+    path : 'product-price',
+    component : ProductUnitPriceComponent
   },
   {
     path : 'add-shop',

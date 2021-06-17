@@ -49,11 +49,18 @@ export class ChangePasswordComponent implements OnInit {
    let payload =f.value;
    payload.emailID = emailID;
    console.log("payload:",payload)
-    this.adServ.changePassword(payload).subscribe((data)=>{
+    this.adServ.changePassword(payload).subscribe((data:any)=>{
       this.alert = true;
       console.log("Change  password Data:",data);
       this.apiResponse=data;
-      console.log("errors:",this.apiResponse.error);
+      // key: "INVALID_OLD_PASSWORD"
+      // message: "Invalid Old Password"
+      // status: "failed"
+      if(data.status =="failed" && data.key == "INVALID_OLD_PASSWORD" ){
+        console.log("old password is mismatched:");
+        return 
+      }
+      // console.log("errors:",this.apiResponse.error);
       if(this.apiResponse.status === "success" ){
         this.router.navigate([`/home`]);
       }

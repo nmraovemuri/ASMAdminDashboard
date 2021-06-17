@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "asmadmindashboard": {
+    "ASMAdminDashboard": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/asmadmindashboard",
+            "outputPath": "dist/ASMAdminDashboard",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "asmadmindashboard:build"
+            "browserTarget": "ASMAdminDashboard:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "asmadmindashboard:build:production"
+              "browserTarget": "ASMAdminDashboard:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "asmadmindashboard:build"
+            "browserTarget": "ASMAdminDashboard:build"
           }
         },
         "test": {
@@ -113,18 +113,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "asmadmindashboard:serve"
+            "devServerTarget": "ASMAdminDashboard:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "asmadmindashboard:serve:production"
+              "devServerTarget": "ASMAdminDashboard:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "asmadmindashboard",
+  "defaultProject": "ASMAdminDashboard",
   "cli": {
     "analytics": "a4e1b60c-623e-41a2-bd52-278284bcf521"
   }

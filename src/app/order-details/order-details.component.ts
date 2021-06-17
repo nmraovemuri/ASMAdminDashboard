@@ -37,6 +37,8 @@ shippingAddress :any;
     console.log(error);
   });
   }
-
+print(){
+  window.print()
+}
 
 }

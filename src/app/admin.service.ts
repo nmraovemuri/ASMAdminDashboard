@@ -5,7 +5,8 @@ import { HttpClient } from '@angular/common/http'
   providedIn: 'root'
 })
 export class AdminService {
-   ASM_ADMIN_SERVER_BASE_URL = "http://localhost:3000";
+  //  ASM_ADMIN_SERVER_BASE_URL = "http://localhost:3000";
+   ASM_ADMIN_SERVER_BASE_URL = "http://localhost:4200";
   // ASM_ADMIN_SERVER_BASE_URL = "http://43.241.36.16:4200";
   constructor(private http: HttpClient) { }
   adminLogin(data: any) {
